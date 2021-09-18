@@ -5,6 +5,7 @@
   --c-fbackground: #25252d;
   --c-vlred: #ff8f70;
   --c-lred: #ff3d54;
+  --c-lvred: #ff6563;
   --c-vdblue: #2c2d3f;
   --c-vblue: #3f4164;
   --f-primary: 'Overpass';
@@ -356,5 +357,106 @@ template {
 
 body {
   font-size: 16px;
+  font-family: var(--f-primary), sans-serif;
+}
+
+.header {
+  color: var(--c-white);
+  height: 500px;
+  background-image: url(/assets/bg-pattern-intro.svg);
+  background-color: var(--c-lvred);
+  border-bottom-left-radius: 110px;
+  padding: 50px 25px 25px;
+  background-size: 290%;
+  background-repeat: no-repeat;
+  background-position: -390px -350px;
+  position: relative;
+}
+
+.header__content {
+  font-family: var(--f-primary), sans-serif;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 2.5rem;
+}
+
+.header__subtitle {
+  font-weight: 200;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__input {
+  position: absolute;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav {
+  display: none;
+}
+
+.button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  width: 110px;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+.button.primary {
+  border: 1px solid var(--c-white);
+  background: var(--c-white);
+  color: var(--c-lred);
+}
+
+.button.secundary {
+  border: 1px solid var(--c-white);
+  background: var(--c-lred);
+  color: var(--c-white);
 }
 /*# sourceMappingURL=style.css.map */

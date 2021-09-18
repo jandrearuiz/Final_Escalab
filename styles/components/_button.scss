@@ -1,0 +1,21 @@
+.button {
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  width: 110px;
+  font-weight: 600;
+  padding: 15px 20px;
+
+  &.primary {
+    border: 1px solid var(--c-white);
+    background: var(--c-white);
+    color: var(--c-lred);
+  }
+
+  &.secundary {
+    border: 1px solid var(--c-white);
+    background: var(--c-lred);
+    color: var(--c-white);
+  }
+}
