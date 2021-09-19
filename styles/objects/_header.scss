@@ -3,12 +3,13 @@
   height: 500px;
   background: var(--c-lvred);
   background-image: url(/assets/bg-pattern-intro.svg);
-  border-bottom-left-radius: 110px;
+  background-image: url(/assets/bg-pattern-intro.svg), linear-gradient(#ff6563, #ff3d54);
   padding: 50px 25px 25px;
   background-size: 290%;
   background-repeat: no-repeat;
-  background-position: -390px -350px;
+  background-position: center center;
   position: relative;
+  border-radius: 0 0 0 110px;
 
   &__content {
     font-family: var(--f-primary), sans-serif;

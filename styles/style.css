@@ -365,12 +365,14 @@ body {
   height: 500px;
   background: var(--c-lvred);
   background-image: url(/assets/bg-pattern-intro.svg);
-  border-bottom-left-radius: 110px;
+  background-image: url(/assets/bg-pattern-intro.svg), -webkit-gradient(linear, left top, left bottom, from(#ff6563), to(#ff3d54));
+  background-image: url(/assets/bg-pattern-intro.svg), linear-gradient(#ff6563, #ff3d54);
   padding: 50px 25px 25px;
   background-size: 290%;
   background-repeat: no-repeat;
-  background-position: -390px -350px;
+  background-position: center center;
   position: relative;
+  border-radius: 0 0 0 110px;
 }
 
 .header__content {
@@ -450,7 +452,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top-right-radius: 130px;
+  border-radius: 0 110px 0 0;
   padding: 50px 25px 25px;
 }
 
