@@ -13,9 +13,16 @@
     color: var(--c-lvred);
   }
 
-  &.secundary {
+  &.secondary {
     border: 1px solid var(--c-white);
     background: var(--c-lvred);
     color: var(--c-white);
+  }
+
+  &.tertiary {
+    text-align: center;
+    border: 1px solid var(--c-white);
+    color: var(--c-white);
+    background: linear-gradient(45deg,#ff6563, #ff3d54);
   }
 }

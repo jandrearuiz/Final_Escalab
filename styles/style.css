@@ -1,15 +1,16 @@
 :root {
   --c-white: #ffffff;
-  --c-ftext:  #c8c8cb;
+  --c-ftext: #c8c8cb;
   --c-body: #4b5862;
   --c-fbackground: #25252d;
   --c-vlred: #ff8f70;
   --c-lred: #ff3d54;
   --c-lvred: #ff6563;
   --c-vdblue: #2c2d3f;
+  --c-llblue: #a5a5af;
   --c-vblue: #3f4164;
-  --f-primary: 'Overpass';
-  --f-secundary: 'Ubuntu';
+  --f-primary: "Overpass";
+  --f-secundary: "Ubuntu";
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -433,7 +434,64 @@ body {
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+}
+
+.nav__item {
+  padding: 10px;
+  text-align: center;
+  color: var(--c-vdblue);
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--c-vdblue);
+}
+
+.nav__link-header {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--c-vdblue);
+}
+
+.nav__link.secondary {
   display: none;
+}
+
+.nav__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer {
@@ -483,6 +541,38 @@ body {
   text-decoration: none;
 }
 
+.modal {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 120px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 385px;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+.modal__close {
+  font-size: 2rem;
+}
+
+#miModal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fas {
+  padding: 10px 10px 10px 20px;
+  color: var(--c-lvred);
+}
+
 .button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -503,9 +593,16 @@ body {
   color: var(--c-lvred);
 }
 
-.button.secundary {
+.button.secondary {
   border: 1px solid var(--c-white);
   background: var(--c-lvred);
   color: var(--c-white);
+}
+
+.button.tertiary {
+  text-align: center;
+  border: 1px solid var(--c-white);
+  color: var(--c-white);
+  background: linear-gradient(45deg, #ff6563, #ff3d54);
 }
 /*# sourceMappingURL=style.css.map */

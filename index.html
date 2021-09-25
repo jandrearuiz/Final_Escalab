@@ -17,39 +17,45 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/3f8a763143.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__logo">
         <img src="./assets/logo.svg" alt="Blogr" />
-        <input class="header__input" type="checkbox" />
-        <img src="./assets/icon-hamburger.svg" alt="" class="header__menu" />
+        <a href="#miModal">
+          <img src="./assets/icon-hamburger.svg" alt="" />
+        </a>
       </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">Product</li>
-          <li class="nav__item">Company</li>
-          <li class="nav__item">
-            Connect
-            <ul class="nav__list second">
-              <li class="nav__item second">
-                <a href="#" class="nav__list">Contact</a>
-              </li>
-              <li class="nav__item second">
-                <a href="#" class="nav__list">Newsletter</a>
-              </li>
-              <li class="nav__item second">
-                <a href="#" class="nav__list">LinkedIn</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="nav__buttons">
-          <a href="#" class="nav__link-header">Login</a>
-          <a href="#" class="button primary">Sign Up</a>
-        </div>
-      </nav>
+      <div id="miModal" class="modal">
+        <a href="#" class= "modal__close">
+          <i class="fas fa-times"></i>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Product</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Company</a></li>
+            <li class="nav__item">Connect
+              <ul class="nav__list secondary">
+                <li class="nav__item secondary">
+                  <a href="#" class="nav__link secondary">Contact</a>
+                </li>
+                <li class="nav__item secondary">
+                  <a href="#" class="nav__link secondary">Newsletter</a>
+                </li>
+                <li class="nav__item secondary">
+                  <a href="#" class="nav__link secondary">LinkedIn</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav__buttons">
+            <a href="#" class="nav__link-header">Login</a>
+            <a href="#" class="button tertiary">Sign Up</a>
+          </div>
+        </nav>
+      </div>
       <div class="header__content">
         <h1 class="header__title">A modern publishing platform</h1>
         <h2 class="header__subtitle">
@@ -57,7 +63,7 @@
         </h2>
         <div class="header__buttons">
           <a href="#" class="button primary">Start For Free</a>
-          <a href="#" class="button secundary">Learn More</a>
+          <a href="#" class="button secondary">Learn More</a>
         </div>
       </div>
     </header>
@@ -68,28 +74,52 @@
         <div class="footer__social">
           <h3 class="footer__title">Product</h3>
           <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">Overview</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Pricing</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Marketplace</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Features</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Integrations</a></li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Overview</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Pricing</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Marketplace</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Features</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Integrations</a>
+            </li>
           </ul>
         </div>
         <div class="footer__social">
           <h3 class="footer__title">Company</h3>
           <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">About</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Team</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Team</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Careers</a>
+            </li>
           </ul>
         </div>
         <div class="footer__social">
           <h3 class="footer__title">Connect</h3>
           <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Newsletter</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">LinkedIn</a></li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Newsletter</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">LinkedIn</a>
+            </li>
           </ul>
         </div>
       </div>
