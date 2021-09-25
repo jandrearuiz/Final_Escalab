@@ -365,9 +365,9 @@ body {
   color: var(--c-white);
   height: 500px;
   background: var(--c-lvred);
-  background-image: url(/assets/bg-pattern-intro.svg);
-  background-image: url(/assets/bg-pattern-intro.svg), -webkit-gradient(linear, left top, left bottom, from(#ff6563), to(#ff3d54));
-  background-image: url(/assets/bg-pattern-intro.svg), linear-gradient(#ff6563, #ff3d54);
+  background-image: url(../assets/bg-pattern-intro.svg);
+  background-image: url(../assets/bg-pattern-intro.svg), -webkit-gradient(linear, left top, left bottom, from(#ff6563), to(#ff3d54));
+  background-image: url(../assets/bg-pattern-intro.svg), linear-gradient(#ff6563, #ff3d54);
   padding: 50px 25px 25px;
   background-size: 290%;
   background-repeat: no-repeat;
