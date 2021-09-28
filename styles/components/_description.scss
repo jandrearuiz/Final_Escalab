@@ -2,4 +2,9 @@
   text-align: center;
   line-height: 2;
   color: var(--c-body);
+  padding: 10px;
+
+  &.white {
+    color: var(--c-white);
+  }
 }

@@ -1,4 +1,8 @@
 .title {
   font-size: 1.8rem;
   text-align: center;
+
+  &.white {
+  color: var(--c-white);
+  }
 }

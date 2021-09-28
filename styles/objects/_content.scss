@@ -5,11 +5,16 @@
   align-items: center;
   margin: 50px 0;
   color: var(--c-vdblue);
+  margin-bottom: 160px;
 
   &__description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  &__img {
+    width: 100%;
   }
 }

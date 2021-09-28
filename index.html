@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, scalable-user=no, initial-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
     />
     <title>Final</title>
     <link
@@ -76,12 +76,20 @@
         <h2 class="title">Designed for the future</h2>
         <div class="content__image">
           <picture>
-            <source srcset="./assets/illustration-editor-mobile.svg" media="(max-width: 750px)">
-            <img src="./assets/illustration-editor-desktop.svg" alt="MDN">
-           </picture>
+            <source
+              class="content__img"
+              srcset="./assets/illustration-editor-mobile.svg"
+              media="(max-width: 750px)"
+            />
+            <img
+              class="content__img desktop"
+              src="./assets/illustration-editor-desktop.svg"
+              alt="design"
+            />
+          </picture>
         </div>
-        <article class="content__description">
-          <h2 class="title">Introducing an extensible editor</h2> 
+        <div class="content__description">
+          <h2 class="title">Introducing an extensible editor</h2>
           <p class="description">
             Blogr features an exceedingly intuitive interface which lets you
             focus on one thing: creating content. The editor supports management
@@ -97,7 +105,23 @@
             categories, sections, format, or flow. With this functionality
             you´re in full control.
           </p>
-        </article>
+        </div>
+      </section>
+      <section class="container">
+        <img
+          src="./assets/illustration-phones.svg"
+          alt="phone"
+          class="container__image"
+        />
+        <div class="container__description">
+          <h2 class="title white">State of the Art Infraestructure</h2>
+          <p class="description white">
+            White reliability and speed in mind, world data centers provide the
+            backbone for ultra-fast connectivity. This ensures your site will
+            load instantly, no matter where your readers are, keeping your site
+            competitive.
+          </p>
+        </div>
       </section>
     </main>
     <footer class="footer">

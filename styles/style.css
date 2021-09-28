@@ -9,6 +9,7 @@
   --c-vdblue: #2c2d3f;
   --c-llblue: #a5a5af;
   --c-vblue: #3f4164;
+  --c-ddblue: #383955;
   --f-primary: "Overpass";
   --f-secundary: "Ubuntu";
 }
@@ -599,6 +600,7 @@ body {
           align-items: center;
   margin: 50px 0;
   color: var(--c-vdblue);
+  margin-bottom: 160px;
 }
 
 .content__description {
@@ -615,6 +617,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.content__img {
+  width: 100%;
+}
+
+.container {
+  background: var(--c-ddblue);
+  background-image: url(../assets/bg-pattern-circles.svg);
+  background-position: center -210px;
+  background-repeat: no-repeat;
+  background-size: 160%;
+  border-radius: 0 110px 0 110px;
+  max-height: 650px;
+}
+
+.container__image {
+  width: 100%;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+}
+
+.container__description {
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
 }
 
 .button {
@@ -654,10 +681,19 @@ body {
   text-align: center;
   line-height: 2;
   color: var(--c-body);
+  padding: 10px;
+}
+
+.description.white {
+  color: var(--c-white);
 }
 
 .title {
   font-size: 1.8rem;
   text-align: center;
+}
+
+.title.white {
+  color: var(--c-white);
 }
 /*# sourceMappingURL=style.css.map */
