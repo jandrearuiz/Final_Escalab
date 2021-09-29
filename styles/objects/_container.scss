@@ -1,14 +1,19 @@
 .container {
   background: var(--c-ddblue);
   background-image: url(../assets/bg-pattern-circles.svg);
-  background-position: center -210px;
+  background-position: center -260px;
   background-repeat: no-repeat;
-  background-size: 160%;
+  background-size: 585px;
   border-radius: 0 110px 0 110px;
-  max-height: 650px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__image {
     width: 100%;
+    max-width: 80%;
     transform: translateY(-150px);
   }
 

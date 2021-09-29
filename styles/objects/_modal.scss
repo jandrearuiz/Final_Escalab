@@ -1,5 +1,4 @@
 .modal {
-  background-color: white;
   width: 90%;
   margin: 0 auto;
   justify-content: center;
@@ -12,15 +11,29 @@
   opacity: 0;
   pointer-events: none;
   border-radius: 10px;
+  background-color: white;
+  z-index: 9999;
 
   &__close {
     font-size: 2rem;
   }
 }
 
-#miModal:target {
-  opacity: 1;
-  pointer-events: auto;
+#modal {
+  &:target {
+    z-index: 9998;
+    background: rgba(0,0,0,.5);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+
+    & .modal {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
 }
 
 .fas {

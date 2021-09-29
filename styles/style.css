@@ -543,7 +543,6 @@ body {
 }
 
 .modal {
-  background-color: white;
   width: 90%;
   margin: 0 auto;
   -webkit-box-pack: center;
@@ -558,13 +557,25 @@ body {
   opacity: 0;
   pointer-events: none;
   border-radius: 10px;
+  background-color: white;
+  z-index: 9999;
 }
 
 .modal__close {
   font-size: 2rem;
 }
 
-#miModal:target {
+#modal:target {
+  z-index: 9998;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#modal:target .modal {
   opacity: 1;
   pointer-events: auto;
 }
@@ -623,18 +634,36 @@ body {
   width: 100%;
 }
 
+.content.second {
+  margin-bottom: 50px;
+}
+
 .container {
   background: var(--c-ddblue);
   background-image: url(../assets/bg-pattern-circles.svg);
-  background-position: center -210px;
+  background-position: center -260px;
   background-repeat: no-repeat;
-  background-size: 160%;
+  background-size: 585px;
   border-radius: 0 110px 0 110px;
-  max-height: 650px;
+  max-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container__image {
   width: 100%;
+  max-width: 80%;
   -webkit-transform: translateY(-150px);
           transform: translateY(-150px);
 }

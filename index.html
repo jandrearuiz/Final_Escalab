@@ -27,38 +27,9 @@
     <header class="header">
       <div class="header__logo">
         <img src="./assets/logo.svg" alt="Blogr" />
-        <a href="#miModal">
+        <a href="#modal">
           <img src="./assets/icon-hamburger.svg" alt="" />
         </a>
-      </div>
-      <div id="miModal" class="modal">
-        <a href="#" class="modal__close">
-          <i class="fas fa-times"></i>
-        </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Product</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Company</a></li>
-            <li class="nav__item">
-              Connect
-              <ul class="nav__list secondary">
-                <li class="nav__item secondary">
-                  <a href="#" class="nav__link secondary">Contact</a>
-                </li>
-                <li class="nav__item secondary">
-                  <a href="#" class="nav__link secondary">Newsletter</a>
-                </li>
-                <li class="nav__item secondary">
-                  <a href="#" class="nav__link secondary">LinkedIn</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="nav__buttons">
-            <a href="#" class="nav__link-header">Login</a>
-            <a href="#" class="button tertiary">Sign Up</a>
-          </div>
-        </nav>
       </div>
       <div class="header__content">
         <h1 class="header__title">A modern publishing platform</h1>
@@ -123,6 +94,39 @@
           </p>
         </div>
       </section>
+      <section class="content second">
+        <div class="content__image">
+          <picture>
+            <source
+              class="content__img"
+              srcset="./assets/illustration-laptop-mobile.svg"
+              media="(max-width: 750px)"
+            />
+            <img
+              class="content__img desktop"
+              src="./assets/illustration-laptop-desktop.svg"
+              alt="design"
+            />
+          </picture>
+        </div>
+        <div class="content__description">
+          <h2 class="title">Introducing an extensible editor</h2>
+          <p class="description">
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+          <h2 class="title">Robust content management</h2>
+          <p class="description">
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality
+            you´re in full control.
+          </p>
+        </div>
     </main>
     <footer class="footer">
       <img src="./assets/logo.svg" alt="Blogr" />
@@ -180,5 +184,23 @@
         </div>
       </div>
     </footer>
+    <div id="modal">
+      <div class="modal">
+        <a href="#" class="modal__close">
+          <i class="fas fa-times"></i>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Product</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Company</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Connect</a></li>
+          </ul>
+          <div class="nav__buttons">
+            <a href="#" class="nav__link-header">Login</a>
+            <a href="#" class="button tertiary">Sign Up</a>
+          </div>
+        </nav>
+      </div>
+    </div>
   </body>
 </html>
