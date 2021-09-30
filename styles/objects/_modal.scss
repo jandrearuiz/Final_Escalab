@@ -39,4 +39,9 @@
 .fas {
   padding: 10px 10px 10px 20px;
   color: var(--c-lvred);
+
+  &.fa-house-user {
+    color: var(--c-white);
+    font-size: 1.5rem;
+  }
 }
