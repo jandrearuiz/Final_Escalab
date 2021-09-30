@@ -10,6 +10,8 @@
   --c-llblue: #a5a5af;
   --c-vblue: #3f4164;
   --c-ddblue: #383955;
+  --c-grayish: #38cc8c;
+  --c-bluebtn: #685fa0;
   --f-primary: "Overpass";
   --f-secundary: "Ubuntu";
 }
@@ -434,6 +436,11 @@ body {
   cursor: pointer;
 }
 
+.header.form {
+  height: 100px;
+  border-radius: 0 0 0 70px;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,6 +678,97 @@ body {
 .container__description {
   -webkit-transform: translateY(-150px);
           transform: translateY(-150px);
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form {
+  margin: 20px;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 5px var(--c-llblue);
+          box-shadow: 1px 1px 5px var(--c-llblue);
+  width: 80%;
+}
+
+.form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+.form__input {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid var(--c-llblue);
+  border-radius: 10px;
+}
+
+.form__button {
+  width: 95%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: var(--c-grayish);
+  border: 1px solid var(--c-grayish);
+  margin: 20px;
+  padding: 10px;
+  color: var(--c-white);
+  text-shadow: 1px 1px 10px var(--c-ddblue);
+  border-radius: 10px;
+  font-weight: 900;
+  -webkit-box-shadow: 1px 1px 10px var(--c-llblue);
+          box-shadow: 1px 1px 10px var(--c-llblue);
+}
+
+.form__link {
+  background: var(--c-bluebtn);
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 10px var(--c-llblue);
+          box-shadow: 1px 1px 10px var(--c-llblue);
+  padding: 15px 10px;
+  width: 70%;
+  text-decoration: none;
+  text-align: center;
+  color: var(--c-white);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.form__text {
+  font-weight: 300;
 }
 
 .button {
