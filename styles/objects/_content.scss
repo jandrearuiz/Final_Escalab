@@ -12,6 +12,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $xlarge) {
+      width: 100%;
+      padding: 0 80px;
+      align-items: flex-start;
+    }
   }
 
   &__img {
@@ -20,5 +26,19 @@
 
   &.second {
     margin-bottom: 50px;
+
+    @media (min-width: $xlarge) {
+      margin-top: 80px;
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: $large) {
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $xlarge) {
+    margin-top: 0;
+    flex-direction: row-reverse;
   }
 }

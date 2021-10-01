@@ -15,9 +15,28 @@
     width: 100%;
     max-width: 80%;
     transform: translateY(-150px);
+
+    @media (min-width: $medium) {
+      max-width: 60%;
+    }
+
+    @media (min-width: $large) {
+      max-width: 50%;
+      transform: translateY(10px);
+    }
   }
 
   &__description {
     transform: translateY(-150px);
+
+    @media (min-width: $large) {
+      transform: translateY(0);
+    }
+  }
+
+  @media (min-width: $large) {
+    max-height: 320px;
+    flex-direction: row;
+    background-position: -100px -250px;
   }
 }

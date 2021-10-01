@@ -10,6 +10,14 @@
 
   &__content {
     margin-top: 30px;
+
+    @media (min-width: $large) {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
   }
 
   &__social {
@@ -33,5 +41,10 @@
   &__link {
     color: var(--c-white);
     text-decoration: none;
+  }
+
+  @media (min-width: $large) {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
