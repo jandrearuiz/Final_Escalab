@@ -11,18 +11,37 @@
     border: 1px solid var(--c-white);
     background: var(--c-white);
     color: var(--c-lvred);
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: linear-gradient(45deg, #ff8f70, #ff3d54);
+      color: var(--c-white);
+    }
   }
 
   &.secondary {
     border: 1px solid var(--c-white);
     background: var(--c-lvred);
     color: var(--c-white);
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: var(--c-white);
+      color: var(--c-lvred);
+    }
   }
 
   &.tertiary {
     text-align: center;
-    border: 1px solid var(--c-white);
+    border: 1px solid var(--c-lred);
     color: var(--c-white);
-    background: linear-gradient(45deg,#ff6563, #ff3d54);
+    background: linear-gradient(45deg, #ff6563, #ff3d54);
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: var(--c-white);
+      color: var(--c-lred);
+      border: 1px solid var(--c-lred);
+    }
   }
 }

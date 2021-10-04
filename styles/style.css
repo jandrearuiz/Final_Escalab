@@ -600,6 +600,7 @@ body {
 }
 
 .modal {
+  max-width: 700px;
   width: 90%;
   margin: 0 auto;
   -webkit-box-pack: center;
@@ -644,7 +645,11 @@ body {
 
 .fas.fa-house-user {
   color: var(--c-white);
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+.fas.fa-house-user:hover {
+  color: var(--c-bluebtn);
 }
 
 .wrap {
@@ -921,8 +926,14 @@ body {
   cursor: pointer;
 }
 
+.form__button:hover {
+  background: linear-gradient(45deg, #3f4164, #38cc8c);
+  border: 1px solid var(--c-grayish);
+}
+
 .form__button:disabled {
   background: var(--c-disabled);
+  border: 1px solid var(--c-disabled);
   cursor: not-allowed;
 }
 
@@ -979,19 +990,41 @@ body {
   border: 1px solid var(--c-white);
   background: var(--c-white);
   color: var(--c-lvred);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button.primary:hover {
+  background: linear-gradient(45deg, #ff8f70, #ff3d54);
+  color: var(--c-white);
 }
 
 .button.secondary {
   border: 1px solid var(--c-white);
   background: var(--c-lvred);
   color: var(--c-white);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button.secondary:hover {
+  background: var(--c-white);
+  color: var(--c-lvred);
 }
 
 .button.tertiary {
   text-align: center;
-  border: 1px solid var(--c-white);
+  border: 1px solid var(--c-lred);
   color: var(--c-white);
   background: linear-gradient(45deg, #ff6563, #ff3d54);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button.tertiary:hover {
+  background: var(--c-white);
+  color: var(--c-lred);
+  border: 1px solid var(--c-lred);
 }
 
 .description {
