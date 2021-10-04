@@ -37,6 +37,18 @@
     width: 100%;
     margin-top: 50px;
     justify-content: space-around;
+
+    @media (min-width: $large) {
+      width: 60%;
+    }
+
+    @media (min-width: $xlarge) {
+      width: 40%;
+    }
+
+    @media (min-width: $xextra) {
+      width: 30%;
+    }
   }
 
   &__logo {

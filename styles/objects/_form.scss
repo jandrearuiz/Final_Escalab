@@ -16,10 +16,15 @@
   }
 
   &__input {
+    width: calc(100% - 20px);
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0;
     border: 1px solid var(--c-llblue);
     border-radius: 10px;
+  }
+
+  &--error {
+    border: 1px solid red;
   }
 
   &__button {
@@ -34,6 +39,12 @@
     border-radius: 10px;
     font-weight: 900;
     box-shadow: 1px 1px 10px var(--c-llblue);
+    cursor: pointer;
+
+    &:disabled {
+      background: var(--c-disabled);
+      cursor: not-allowed;
+    }
   }
 
   &__link {
@@ -51,5 +62,11 @@
 
   &__text {
     font-weight: 300;
+  }
+
+  &__hint {
+    color: var(--c-error);
+    font-size: 0.8rem;
+    margin: 0 0 0 10px;
   }
 }

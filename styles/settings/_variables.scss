@@ -10,8 +10,10 @@
   --c-llblue: #a5a5af;
   --c-vblue: #3f4164;
   --c-ddblue: #383955;
+  --c-error: #ff0000;
   --c-grayish: #38cc8c;
   --c-bluebtn: #685fa0;
+  --c-disabled: #808080;
   --f-primary: "Overpass";
   --f-secundary: "Ubuntu";
 }
@@ -19,3 +21,5 @@
 $medium: 568px;
 $large: 768px;
 $xlarge: 992px;
+$extra: 1200px;
+$xextra: 1400px;

@@ -10,8 +10,10 @@
   --c-llblue: #a5a5af;
   --c-vblue: #3f4164;
   --c-ddblue: #383955;
+  --c-error: #ff0000;
   --c-grayish: #38cc8c;
   --c-bluebtn: #685fa0;
+  --c-disabled: #808080;
   --f-primary: "Overpass";
   --f-secundary: "Ubuntu";
 }
@@ -418,6 +420,24 @@ body {
       justify-content: space-around;
 }
 
+@media (min-width: 768px) {
+  .header__buttons {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__buttons {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header__buttons {
+    width: 30%;
+  }
+}
+
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,6 +780,18 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .container__image {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container__image {
+    max-width: 30%;
+  }
+}
+
 .container__description {
   -webkit-transform: translateY(-150px);
           transform: translateY(-150px);
@@ -860,10 +892,15 @@ body {
 }
 
 .form__input {
+  width: calc(100% - 20px);
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0;
   border: 1px solid var(--c-llblue);
   border-radius: 10px;
+}
+
+.form--error {
+  border: 1px solid red;
 }
 
 .form__button {
@@ -881,6 +918,12 @@ body {
   font-weight: 900;
   -webkit-box-shadow: 1px 1px 10px var(--c-llblue);
           box-shadow: 1px 1px 10px var(--c-llblue);
+  cursor: pointer;
+}
+
+.form__button:disabled {
+  background: var(--c-disabled);
+  cursor: not-allowed;
 }
 
 .form__link {
@@ -899,6 +942,12 @@ body {
 
 .form__text {
   font-weight: 300;
+}
+
+.form__hint {
+  color: var(--c-error);
+  font-size: 0.8rem;
+  margin: 0 0 0 10px;
 }
 
 .video {

@@ -37,51 +37,55 @@
     <main class="main">
       <section class="main__form">
         <h3 class="title__form">A modern publishing platform</h3>
-      <a href="#" class="form__link"
-        >Try it free 7 days
-        <span class="form__text">then $20/mo.thereafter</span></a
-      >
-      <div class="form">
-        <form class="form__form" action="data.php" method="post">
-          <input
-            class="form__input"
-            type="text"
-            id="name"
-            name="user__name"
-            placeholder="First Name"
-          />
-          <input
-            class="form__input"
-            type="text"
-            id="lastname"
-            name="user__lastname"
-            placeholder="Last Name"
-          />
-          <input
-            class="form__input"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Adress"
-          />
-          <input
-            class="form__input"
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-          />
-          <button class="form__button" type="submit">
-            CLAIM YOUR FREE TRIAL
-          </button>
-        </form>
-      </div>
+        <a href="#" class="form__link"
+          >Try it free 7 days
+          <span class="form__text">then $20/mo.thereafter</span></a
+        >
+        <div class="form">
+          <form class="form__form" id="form">
+            <div class="form__control">
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="form__control">
+              <input
+              class="form__input"
+              type="text"
+              id="lastName"
+              placeholder="Last Name"
+            />
+            </div>
+            <div class="form__control">
+              <input
+              class="form__input"
+              type="email"
+              id="email"
+              placeholder="Email Adress"
+            />
+            </div>
+            <div class="form__control">
+              <input
+              class="form__input"
+              type="password"
+              id="password"
+              placeholder="Password"
+            />
+            </div>
+            <button class="form__button" id="btnSubmit" type="submit" disabled>
+              CLAIM YOUR FREE TRIAL
+            </button>
+          </form>
+        </div>
       </section>
       <section class="video">
         <h3 class="title__form">Temas de Interés</h3>
         <iframe
-          width="400"
-          height="315"
+          width="450"
+          height="350"
           src="https://www.youtube.com/embed/RcOkDKSvoRg"
           title="YouTube video player"
           frameborder="0"
@@ -147,4 +151,5 @@
       </div>
     </footer>
   </body>
+  <script src="../scripts/index.js"></script>
 </html>

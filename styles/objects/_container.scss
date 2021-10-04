@@ -24,6 +24,14 @@
       max-width: 50%;
       transform: translateY(10px);
     }
+
+    @media (min-width: $extra) {
+      max-width: 40%;
+    }
+
+    @media (min-width: $xextra) {
+      max-width: 30%;
+    }
   }
 
   &__description {
