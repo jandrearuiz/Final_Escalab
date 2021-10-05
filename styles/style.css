@@ -970,6 +970,17 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 50px;
+  width: 80%;
+}
+
+.video__content {
+  height: 400px;
+}
+
+@media (min-width: 992px) {
+  .video {
+    width: 40%;
+  }
 }
 
 .button {
